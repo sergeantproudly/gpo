@@ -567,12 +567,16 @@ function _scrollTo(target, offset) {
 					$(this).children('.close').click(function(e) {
 						e.stopPropagation();
 						$('body').removeClass('mobile-opened');
-						$('.modal-fadeout').stop().fadeOut(300);
+						$('.modal-fadeout').stop().fadeOut(300);		
 					}).data('inited', true);
 				}
 
+				$('#menu-holder').css('left', '-75%');
+				$('#bl-geo, #tel, #bl-account').hide();
 				$('body').addClass('mobile-opened');
 				$('#menu-holder').find('.close').stop().show();
+				$('#menu-holder').animate({'left': '0'}, __animationSpeed);
+				$('#bl-geo, #tel, #bl-account').stop().fadeIn(__animationSpeed);
 
 				/*
 				if ($(this).children('ul').outerHeight() > $(window).height()) {
