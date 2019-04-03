@@ -273,7 +273,7 @@ function showModal(modal_id, dontHideOthers) {
 	if ($modal.attr('data-long') || oversize) {
 		$('html').addClass('html-modal-long');
 
-		if (oversize) {
+		if (oversize && __isMobile) {
 			var modalHeight = $modal.outerHeight();
 			$('#layout').data('scrollTop', $(window).scrollTop()).addClass('js-modal-overflow').height(modalHeight);
 			$modal.css('top', 0);
