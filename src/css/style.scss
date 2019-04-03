@@ -434,6 +434,11 @@ td{
 #layout {
 	min-height: 100%;
 
+	&.js-modal-overflow {
+		overflow: hidden;
+		position: relative;
+	}
+
 	&:after {
 		content: '';
 		display: block;
@@ -2940,5 +2945,32 @@ footer {
 				}
 			}
 		}
+	}
+}
+#message {
+	text-align: center;
+	min-height: 427px;
+	padding: 154px 10%;
+
+	@media (max-width: $adaptive-width-mobile) {
+		font-size: 15px;
+		min-height: 0;
+		padding: 75px 10%;
+	}
+
+	h1,
+	.h1 {
+		margin: 0 auto 16px;
+		max-width: 487px;
+
+		@media (max-width: $adaptive-width-mobile) {
+			font-size: 20px;
+		}
+	}
+
+	p {
+		max-width: 487px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
