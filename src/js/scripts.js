@@ -659,8 +659,10 @@ function _scrollTo(target, offset) {
 				$(this).closest('li').stop().slideUp(__animationSpeed, function() {
 					$(this).remove();
 				});
+				$holder.stop().fadeIn(__animationSpeed);
 				// FIXME
 			});
+			$holder.stop().fadeOut(__animationSpeed);
 
 			// FIXME
 		});
