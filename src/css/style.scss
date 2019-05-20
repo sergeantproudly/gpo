@@ -2023,6 +2023,20 @@ footer {
 			}
 		}
 	}
+
+	.show-more {
+		margin-top: 25px;
+		margin-bottom: 0;
+		font-size: 15px;
+
+		& > a {
+			color: #a1aebe;
+
+			&:hover {
+				color: darken(#a1aebe, 10%);
+			}
+		}
+	}
 }
 
 #news {
