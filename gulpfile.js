@@ -37,7 +37,7 @@ function styles() {
 		        }))
 		        */
 		        .pipe(sass.sync({outputStyle: 'compressed'}).on('error', sass.logError))
-		        .pipe(sourcemaps.write())
+		        /*.pipe(sourcemaps.write())*/
 				.pipe(gulp.dest('./assets/css'))
 				.pipe(browserSync.stream());
 }
@@ -63,6 +63,11 @@ function fonts() {
 		.pipe(gulp.dest('./assets/fonts'));
 }
 
+function copy() {
+	return gulp.src('./src/images/*')
+        .pipe(gulp.dest('./assets/images'));
+}
+
 function watch() {
 	browserSync.init({
         server: {
@@ -72,6 +77,7 @@ function watch() {
 
 	gulp.watch('./src/css/**/*.scss', styles);
 	gulp.watch('./src/js/**/*.js', scripts);
+	gulp.watch('./src/images/**/*', copy);
 	gulp.watch('./*.html').on('change', browserSync.reload);
 }
 
