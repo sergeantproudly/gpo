@@ -1083,6 +1083,20 @@ body {
 						color: #fff;
 					}
 				}
+
+				.attachments {
+					.files-list {
+						& > li {
+							.name {
+								color: #fff;
+							}
+
+							.remove {
+								color: #bbb;
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -1224,6 +1238,24 @@ body {
 				ul {
 					& > li {
 						background-color: #000;
+					}
+				}
+			}
+		}
+
+		.ui-selectmenu-menu {
+			.ui-menu {
+				border-color: #fff;
+
+				li {
+					background-color: #000;
+					color: #fff;
+					border-color: #fff;
+
+					.ui-state-active {
+						&:after {
+							background-image: url('../images/ico_v_white.svg');
+						}
 					}
 				}
 			}
@@ -1566,6 +1598,20 @@ body {
 						color: #D7FF36;
 					}
 				}
+
+				.attachments {
+					.files-list {
+						& > li {
+							.name {
+								color: #D7FF36;											
+							}
+
+							.remove {
+								color: #D7FF36;											
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -1712,6 +1758,24 @@ body {
 				ul {
 					& > li {
 						background-color: #D7FF36;
+					}
+				}
+			}
+		}
+
+		.ui-selectmenu-menu {
+			.ui-menu {
+				border-color: #D7FF36;
+
+				li {
+					background-color: #000;
+					color: #D7FF36;
+					border-color: #D7FF36;
+
+					.ui-state-active {
+						&:after {
+							background-image: url('../images/ico_v_green.svg');
+						}
 					}
 				}
 			}
