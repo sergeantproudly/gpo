@@ -15,9 +15,10 @@ const imagemin = require('gulp-imagemin');
 const jsFiles = [
 	'./src/js/jquery-3.1.1.min.js',
 	'./src/js/jquery-ui.min.js',
+	'./src/js/jquery-ui-timepicker-addon.js',
 	'./src/js/jquery.touchSwipe.min.js',
 	'./src/js/jquery.mousewheel.min.js',
-	'./src/js/slick.min.js',	
+	'./src/js/slick.min.js',
 	'./src/js/scripts.js'
 ];
 
