@@ -1064,9 +1064,13 @@ footer {
 	background-color: #414B5B;
 	margin-top: -102px;
 
+	@media (max-width: $adaptive-width-tablet) {
+		height: 142px;
+	}
+
 	@media (max-width: $adaptive-width-tablet-middle) {
-		height: 246px;
-		margin-top: -246px;
+		height: 286px;
+		margin-top: -286px;
 		text-align: center;
 	}
 
@@ -1146,7 +1150,7 @@ footer {
 
 	#policy {
 		position: absolute;
-		top: 38px;
+		top: 31px;
 		right: 236px;
 		color: #C6C6C6;
 		font-size: 14px;
@@ -1168,6 +1172,43 @@ footer {
 
 		@media (max-width: $adaptive-width-tablet-small) {
 			top: 203px;
+		}
+
+		@media (max-width: $adaptive-width-mobile) {
+			font-size: 11px;
+		}
+
+		&:hover {
+			color: lighten(#C6C6C6, 10%);
+		}
+	}
+
+	#browsers-support {
+		position: absolute;
+		top: 55px;
+		right: 236px;
+		color: #C6C6C6;
+		font-size: 14px;
+		opacity: 0.;
+
+		@media (max-width: $adaptive-width-tablet) {
+			top: 86px;
+			right: 0;
+			width: auto;
+			line-height: 1.15;
+			text-align: right;
+		}
+
+		@media (max-width: $adaptive-width-tablet-middle) {
+			right: 0;
+			width: 100%;
+			top: 240px;
+			font-size: 12px;
+			text-align: center;
+		}
+
+		@media (max-width: $adaptive-width-tablet-small) {
+			top: 229px;
 		}
 
 		@media (max-width: $adaptive-width-mobile) {
